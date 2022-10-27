@@ -11,12 +11,11 @@ const memberRouter = require('./routes/member');
 
 const PORT = 8080;
 
-const connectDB = async () => {
+const connectDB = async() => {
     try {
         await mongoose.connect(url);
         console.log("DB connected");
-    }
-    catch(err){
+    } catch(err) {
         console.log(err);
         process.exit(1);
     }
