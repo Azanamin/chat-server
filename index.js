@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require('cors');
 const { default: mongoose } = require("mongoose");
 
-var url = "mongodb://localhost:27017/dbChat";
+var url = "mongodb+srv://pbl4:pbl4@dbchat.nsy4uyf.mongodb.net/test";
 
 const authRouter = require('./routes/auth');
 const msgRouter = require('./routes/msg');
